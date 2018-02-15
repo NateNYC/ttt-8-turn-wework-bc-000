@@ -28,8 +28,8 @@ def input_to_index(index)
  index.to_i - 1
 end
 
-def move(board, index, "X")
-  board[index] = "X"
+def move(board, index, "O")
+  board[index] = "O"
 end
 
 def position_taken?(board,index)
