@@ -6,7 +6,7 @@ def turn(board)
   index = input_to_index(input)
   
   if valid_move?(board, index)
-    move(board, index, "0")
+    move(board, index, "X")
     display_board(board)
   else
     turn(board)
@@ -28,7 +28,7 @@ def input_to_index(index)
  index.to_i - 1
 end
 
-def move(board, index, token = "O")
+def move(board, index, token = "X")
   board[index] = token
 end
 
