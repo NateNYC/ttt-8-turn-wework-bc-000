@@ -5,17 +5,13 @@ def turn(board)
   input=gets.strip
   index = input_to_index(input)
   
- if valid_move?(board, index)
-   move = (board, index, "0")
-
-  end
-  
   if valid_move?(board, index)
-     move(board, index, token = "O")
+    move = (board, index, "0")
+    display_board(board)
+  else
+    turn(board)
   end
-  
-  display_board(board)
-  
+
 end
 
 
