@@ -8,7 +8,7 @@ def turn(board)
   
   until valid_move?(board, index)
   
-end
+  end
   
   if valid_move?(board, index)
     move(board, index, token = "O")
