@@ -1,7 +1,7 @@
 
 def turn(board)
   
-  puts "Please"
+  puts "Please enter 1-9:"
   
   until valid_move?(board, index)
     puts "Please enter 1-9:"
