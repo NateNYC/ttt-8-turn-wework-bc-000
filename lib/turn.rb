@@ -6,6 +6,10 @@ def turn(board)
   
   index = input_to_index(input)
   
+  until valid_move?(board, index)
+  
+end
+  
   if valid_move?(board, index)
     move(board, index, token = "O")
   end
